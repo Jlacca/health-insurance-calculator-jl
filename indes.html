@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"
+    <title>Insurance Risk Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<!--
+    Author: Jeffrey Lacca
+    Project sprint 7
+    Special Tnaks to: Professor P., The members of SiveryTimbers, and the Internet!
+    
+    All rights reserved
+-->
+
+<body>
+    <h1>Health Insurance Calculator</h1>
+    <p>Input answers given to you by your client to determine thier level of risk of being insured.</p>
+
+    <label">Please enter the client's age:</label>
+
+    <select id="q1">
+      <option value="0"> 29 or younger</option>
+      <option value="10">30 - 44</option>
+      <option value="20">45 - 59</option>
+      <option value="30">60 and Over</option>
+    </select>
+    <br /><br />
+
+    <label">Please enter your client's height:</label>
+    <label>Feet:</label>
+    <select id="h1">
+		<option value="12">1'</option>
+		<option value="24">2'</option>
+		<option value="36">3'</option>
+		<option value="48">4'</option>
+		<option value="60">5'</option>
+		<option value="72">6'</option>
+		<option value="84">7'</option>
+		<option value="96">8'</option>
+		<option value="108">9'</option>
+	</select>
+    <label>Inches:</label>
+	<select id="h2">
+		<option value="0">0"</option>
+		<option value="1">1"</option>
+		<option value="2">2"</option>
+		<option value="3">3"</option>
+		<option value="4">4"</option>
+		<option value="5">5"</option>
+		<option value="6">6"</option>
+		<option value="7">7"</option>
+		<option value="8">8"</option>
+		<option value="9">9"</option>
+		<option value="10">10"</option>
+		<option value="11">11"</option>
+	</select>
+    <br /><br />
+
+    <label> Please select your client's weight in pounds:</label><br />
+	<label></label>
+	<select id="w1">
+		<option value="0">0</option>
+		<option value="100">1</option>
+		<option value="200">2</option>
+		<option value="300">3</option>
+		<option value="400">4</option>
+	</select>
+	<label></label>
+	<select id="w2">
+		<option value="0">0</option>
+		<option value="10">1</option>
+		<option value="20">2</option>
+		<option value="30">3</option>
+		<option value="40">4</option>
+		<option value="50">5</option>
+		<option value="60">6</option>
+		<option value="70">7</option>
+		<option value="80">8</option>
+		<option value="90">9</option>
+		
+	</select>
+	<label></label>
+	<select id="w3">
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+	</select>
+<br /><br />
+    <label">Please enter your client's blood pressure:</label>
+    <br />
+    <label> Please select your client's Systolic Measurement(upper number)in mm Hg:</label><br />
+	<label></label>
+	<select id="s1">
+		<option value="0">0</option>
+		<option value="100">1</option>
+		<option value="200">2</option>
+	</select>
+	<label></label>
+	<select id="s2">
+		<option value="0">0</option>
+		<option value="10">1</option>
+		<option value="20">2</option>
+		<option value="30">3</option>
+		<option value="40">4</option>
+		<option value="50">5</option>
+		<option value="60">6</option>
+		<option value="70">7</option>
+		<option value="80">8</option>
+		<option value="90">9</option>
+		
+	</select>
+	<label></label>
+	<select id="s3">
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+	</select>
+   <br /><br />
+    <label> Please select your client's Diastolic Measurement(lower number)in mm Hg:</label><br />
+	<label></label>
+	<select id="d1">
+		<option value="0">0</option>
+		<option value="100">1</option>
+	</select>
+	<label></label>
+	<select id="d2">
+		<option value="0">0</option>
+		<option value="10">1</option>
+		<option value="20">2</option>
+		<option value="30">3</option>
+		<option value="40">4</option>
+		<option value="50">5</option>
+		<option value="60">6</option>
+		<option value="70">7</option>
+		<option value="80">8</option>
+		<option value="90">9</option>
+		
+	</select>
+	<label></label>
+	<select id="d3">
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+	</select>
+
+    <br /><br />
+
+
+    <label">Does your client have a family history of Diabetes?</label>
+
+    <select id="q5">
+        <option value="0">No</option>
+        <option value="10">Yes</option>
+          </select>
+    <br /><br />
+
+    <label">Does your client have a family history of Alzheimers?</label>
+
+    <select id="q6">
+        <option value="0">No</option>
+        <option value="10">Yes</option>
+          </select>
+    <br /><br />
+
+    <label">Does your client have a family history of Cancer?</label>
+
+    <select id="q7">
+        <option value="0">No</option>
+        <option value="10">Yes</option>
+          </select>
+    <br /><br />
+
+
+    <br /><br />
+    <button onclick="calculateRisk()">Calculate Risk</button>
+    <br /> <br />
+    <b1 id="Risk"></b1>
+    <l1 id="RiskAssessment"></l1>
+
+<script>
+console.log("Starting Risk Calculation");
+
+function calculateRisk() {
+    console.log("calculateRisk()");
+
+    let age = Number(document.getElementById("q1").selectedOptions[0].value) ;
+
+	let heightIn = Number(document.getElementById("h2").selectedOptions[0].value) ;
+	let heighFt = Number(document.getElementById("h1").selectedOptions[0].value) ;
+
+	let weightH = Number(document.getElementById("w1").selectedOptions[0].value) ;
+	let weightT = Number(document.getElementById("w2").selectedOptions[0].value) ;
+	let weightO = Number(document.getElementById("w3").selectedOptions[0].value) ;
+
+    let Top = Number(document.getElementById("s1").selectedOptions[0].value) ;
+	let tOp = Number(document.getElementById("s2").selectedOptions[0].value) ;
+	let toP = Number(document.getElementById("s3").selectedOptions[0].value) ;
+
+    let Bot = Number(document.getElementById("d1").selectedOptions[0].value) ;
+	let bOt = Number(document.getElementById("d2").selectedOptions[0].value) ;
+	let boT = Number(document.getElementById("d3").selectedOptions[0].value) ;
+
+
+// converts numbers to total to make conversion easy
+	let totalHeight = heighFt + heightIn ;
+	let totalWeight = weightH + weightT + weightO ;
+    let totalTop = Top + tOp + toP ;
+    let totalBot = Bot + bOt + boT ;
+
+
+    let question1Response = Number(document.getElementById('q5').selectedOptions[0].value);
+    let question2Response = Number(document.getElementById('q6').selectedOptions[0].value);
+    let question3Response = Number(document.getElementById('q7').selectedOptions[0].value);
+ //add disease questions
+    let totalDisease = question1Response + question2Response + question3Response;
+
+//Log Answers
+    console.log("Question 1 Answers:")
+	console.log(document.getElementById("q1").selectedOptions[0].text);
+	console.log(document.getElementById("q1").selectedOptions[0].value);
+	
+
+	  console.log("Question 2 Answers: + feet");
+	console.log(document.getElementById("h1").selectedOptions[0].text);
+	console.log(document.getElementById("h1").selectedOptions[0].value);
+	
+
+    console.log("Question 2 Answers: + inches");
+	console.log(document.getElementById("h2").selectedOptions[0].text);
+	console.log(document.getElementById("h2").selectedOptions[0].value);
+
+	console.log("Question 2 Answers: Total inches");
+	console.log(totalHeight);
+
+    console.log("Question 3: Weight Answers: 100s");
+	console.log(document.getElementById("w1").selectedOptions[0].text);
+	console.log(document.getElementById("w1").selectedOptions[0].value);
+
+	console.log("Question 3: Weight Answers: 10s");
+	console.log(document.getElementById("w2").selectedOptions[0].text);
+	console.log(document.getElementById("w2").selectedOptions[0].value);
+
+    console.log("Question 3: Weight Answers: 1s");
+	console.log(document.getElementById("w3").selectedOptions[0].text);
+	console.log(document.getElementById("w3").selectedOptions[0].value);
+
+	console.log("Question 3: Weight Answers: Total");
+	console.log(totalWeight) ;
+
+	console.log("Question 4a: Blood Pressure Systolic 100s");
+	console.log(document.getElementById("s1").selectedOptions[0].text);
+	console.log(document.getElementById("s1").selectedOptions[0].value);
+
+	console.log("Question 4a: Blood Pressure Systolic 10s");
+	console.log(document.getElementById("s2").selectedOptions[0].text);
+	console.log(document.getElementById("s2").selectedOptions[0].value);
+
+    console.log("Question 4a: Blood Pressure Systolic 1s");
+	console.log(document.getElementById("s3").selectedOptions[0].text);
+	console.log(document.getElementById("s3").selectedOptions[0].value);
+
+	console.log("Question 4a: Systolic: Total");
+	console.log(totalTop) ;
+
+    console.log("Question 4b: Blood Pressure Diastolic 100s");
+	console.log(document.getElementById("d1").selectedOptions[0].text);
+	console.log(document.getElementById("d1").selectedOptions[0].value);
+
+	console.log("Question 4b: Blood Pressure Diastolic 10s");
+	console.log(document.getElementById("d2").selectedOptions[0].text);
+	console.log(document.getElementById("d2").selectedOptions[0].value);
+
+    console.log("Question 4b: Blood Pressure Diastolic 1s");
+	console.log(document.getElementById("d3").selectedOptions[0].text);
+	console.log(document.getElementById("d3").selectedOptions[0].value);
+
+	console.log("Question 4b: Diastolic: Total");
+	console.log(totalBot) ;
+
+	console.log("Question 5: Diabetes");
+	console.log(document.getElementById("q5").selectedOptions[0].text);
+	console.log(document.getElementById("q5").selectedOptions[0].value);
+
+    console.log("Question 6: Alzheimers");
+	console.log(document.getElementById("q6").selectedOptions[0].text);
+	console.log(document.getElementById("q6").selectedOptions[0].value);
+
+    console.log("Question 7: Cancer");
+	console.log(document.getElementById("q7").selectedOptions[0].text);
+	console.log(document.getElementById("q7").selectedOptions[0].value);
+
+//metric converstion
+	let heightM = totalHeight * 0.0254
+	let weightK = totalWeight * 0.453592
+
+	console.log("Metric");
+	console.log(heightM + " Meters");
+	console.log(weightK + " Kg");
+   
+//BMI calc
+   let bmi = weightK / Math.pow(heightM,2)
+   console.log("bmi");
+   console.log(bmi);
+
+//BMI point Value
+	if (bmi >= 18.5 && bmi <= 24.9) {
+	   bmivalue = 0}
+	else if (bmi >= 25.0 && bmi <= 29.9) {
+		bmivalue = 30}
+	else
+		{bmivalue = 75}
+
+ //Blood Pressure point Value
+ if (totalTop < 120 && totalBot < 80) {
+       bpvalue = 0}
+    else if ((totalTop <=129 && totalTop >=120) && totalBot <80 ) {
+        bpvalue = 15}
+    else if ((totalTop <=139 && totalTop >=130) ^ (totalBot <= 89 && totalBot >=80 )) {
+        bpvalue = 30}
+    else if ((totalTop <=180 && totalTop >=140) ^ (totalBot >=90 && totalBot <=119 )) {
+        bpvalue = 75}
+    else if ((totalBot >=90 && totalBot <=120 )) {
+        bpvalue = 75}
+    else 
+        {bpvalue = 100}
+  
+    
+    console.log("Age Value Points");
+	console.log(age);
+
+	console.log("BMI Value Points");
+	console.log(bmivalue);
+
+    console.log("BP Value Points");
+	console.log(bpvalue);   
+    
+    console.log("Disease Value Points");
+	console.log(totalDisease); 
+
+
+    let totInsurability = age + bmivalue + bpvalue + totalDisease;
+   
+    document.getElementById("Risk").innerHTML = "Your Risk is..." + totInsurability
+    if (totInsurability <= 20){document.getElementById("RiskAssessment").innerHTML = ("Low Risk")
+
+  }
+    else if (totInsurability >20 && totInsurability <=50){document.getElementById("RiskAssessment").innerHTML = ("Moderate Risk")
+
+  }
+    else if (totInsurability >50 && totInsurability <=75){document.getElementById("RiskAssessment").innerHTML = ("High Risk")
+
+  } 
+    else {document.getElementById("RiskAssessment").innerHTML = ("Uninsurable")
+ }
+
+var resetButton = document.getElementID('resetButton');
+resetButton.onclick= reloadPage;
+function reloadPage() {
+	window.location.reload();
+}
+}
+</script>
+
+var resetButton = document.getElementID('resetButton')';
+resetButton.onclick= reloadPage;
+function reloadPage() {
+	window.location.reload();
+}
+</body>
+</html>
